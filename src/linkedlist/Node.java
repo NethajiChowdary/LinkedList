@@ -12,8 +12,8 @@ public class Node {
 		linkedList.insert(70);
 		linkedList.print();
 		
-		 int pop = linkedList.pop();
-		 System.out.println(pop);
+		 int popLast = linkedList.popLast();
+		 System.out.println(popLast);
 		
 		linkedList.print();
 	}
