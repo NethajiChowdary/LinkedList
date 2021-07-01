@@ -61,6 +61,17 @@ public class LinkedList
 			
 			}
 
+		public int pop()
+		{
+			int popData = 0;
+			if (head == null) 
+			{
+			System.out.println("Stack Over Flow");
+			}
+			popData = head.data;
+			head = head.next;
+			return popData;
+			}
 }
 
 
