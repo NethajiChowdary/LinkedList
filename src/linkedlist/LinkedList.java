@@ -4,6 +4,7 @@ public class LinkedList
 {
 	Node head;
 	Node tail;
+	//int i = 30;
 	
 	 class Node
 	 {
@@ -63,7 +64,7 @@ public class LinkedList
 			}
 
 		 public int popLast() {
-		        if (head == null) 
+		      if (head == null) 
 		        {
 		            System.out.println("Empty");
 		        } 
@@ -84,7 +85,28 @@ public class LinkedList
 		        }
 				return 0;
 		    }
-
+		public void searchNode(int data) {  
+	        Node current = head;  
+	        int i = 1;  
+	        boolean flag = false;  
+	        if(head == null) {  
+	            System.out.println("List is empty");  
+	        }  
+	        else {  
+	            while(current != null) {  
+	                if(current.data == data) {  
+	                    flag = true;  
+	                    break;  
+	                }  
+	                i++;  
+	                current = current.next;  
+	            }  
+	        }  
+	        if(flag)  
+	             System.out.println("Element is present in the list at the position : " + i);  
+	        else  
+	             System.out.println("Element is not present in the list");  
+	    }  
 }
 
 
