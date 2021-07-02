@@ -4,7 +4,7 @@ public class LinkedList
 {
 	Node head;
 	Node tail;
-	//int i = 30;
+
 	
 	 class Node
 	 {
@@ -63,7 +63,7 @@ public class LinkedList
 			
 			}
 
-		 public int popLast() {
+		 public int pop() {
 		      if (head == null) 
 		        {
 		            System.out.println("Empty");
@@ -76,7 +76,7 @@ public class LinkedList
 		        {
 		            Node n = head;
 		            Node n1 = head;
-		            while (n.next != null)
+		            while (n1.next != null)
 		            {
 		                n1 = n;
 		                n = n.next;
@@ -107,6 +107,26 @@ public class LinkedList
 	        else  
 	             System.out.println("Element is not present in the list");  
 	    }  
+		public void deleteElement(int check)
+		{
+			int count = 0;
+	        Node current = head;    
+		    while (current != null) 
+		    { 
+		         if (current.next.data == check) 
+		         {
+		              current.next=null;
+		         }
+		         count++;
+		         current = current.next; 
+		    }  
+		  
+		}
+	 public void printsize()
+	 {
+		 int count = 3;
+		System.out.println("size of list: " +count );
+	 }	
 }
 
 

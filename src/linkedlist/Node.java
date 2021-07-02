@@ -7,16 +7,20 @@ public class Node {
 		
 		
 		LinkedList linkedList = new LinkedList();
-		linkedList.insert(56);
-		linkedList.insert(30);
-		linkedList.insert(40);
-		linkedList.insert(70);
-		linkedList.print();
-		linkedList.searchNode(30);
-		//System.out.println(linkedList.i);
-		 int popLast = linkedList.popLast();
-		 System.out.println(popLast);
+		 linkedList.insert(56);
+		   linkedList.insert(30);
+		   linkedList.insert(40);
+		   linkedList.insert(70);
+		   linkedList.print();
+		   linkedList.deleteElement(40);
+		   linkedList.insert(70);
+		   linkedList.print();
+
+		 linkedList.printsize();
+		 int pop = linkedList.pop();
+		 System.out.println(pop);
+		 
 		
-		 linkedList.print();
 	}
+	
 }
